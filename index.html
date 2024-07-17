@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="dessert-container">
+      <h1 class="dessert__title">Desserts</h1>
+      <div class="dessert__wrap">
+          <!-- inside js -->
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <h2 class="cart__title">Your Cart (<span class="quantity">0</span>)</h2>
+      <div class="cart__descr-wrap">
+        <div class="cart__empty-wrap">
+          <div class="cart__img-wrap">
+            <img src="assets/images/illustration-empty-cart.svg" alt="">
+          </div> 
+          <p class="cart__empty-descr">Your added items will appear here</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <dialog class="confirmed-modal">
+    <img src="assets/images/icon-order-confirmed.svg" alt="" class="">
+    <h1 class="modal__title">Order Confirmed</h1>
+    <p class="modal__descr">We hope you enjoy your food!</p>
+    <div class="modal__order-list-wrap">
+      <ul class="modal__order-list">
+      </ul>
+      <div class="modal__total-price-stack">
+        <p class="modal__total-text">Order Total</p>
+        <p class="cart__order-total-price modal__total-price"></p>
+      </div>
+    </div>
+    <button class="modal__btn">Start New Order</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
